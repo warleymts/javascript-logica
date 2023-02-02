@@ -1,17 +1,20 @@
 // Carro 1
-let carOne = prompt("Insira o nome do carro 1: ");
-let veloOne = prompt("Defina a velocidade do carro 1:");
+const carOne = {
+  name: prompt("Insira o nome do carro 1: "),
+  velo: prompt("Defina a velocidade do carro 1:"),
+};
 
 // Carro 2
-let carTwo = prompt("Insira o nome do carro 2: ");
-let veloTwo = prompt("Insira a velocidade do carro 2: ");
-
+const carTwo = {
+  name: prompt("Insira o nome do carro 2: "),
+  velo: prompt("Insira a velocidade do carro 2: "),
+};
 
 // Cálculos
-if (veloOne > veloTwo) {
-  alert("O " + carOne + " é mais rápido do que o " + carTwo + ".");
-} else if (veloTwo > veloOne) {
-  alert("O " + carTwo + " é mais rápido do que o " + carOne + ".");
+if (carOne.velo > carTwo.velo) {
+  alert(`O(a) ${carOne.name} é mais rápido(a) do que o(a) ${carTwo.name}.`);
+} else if (carTwo.velo > carOne.velo) {
+  alert(`O(a) ${carTwo.name} é mais rápido(a) do que o(a) ${carOne.name}.`);
 } else {
-  alert("A velocidade de " + carOne + " e " + carTwo + " são iguais.");
+  alert(`A velocidade de ${carOne.name} e ${carTwo.name} são iguais.`);
 }
