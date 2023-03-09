@@ -43,3 +43,23 @@ console.log(index);
 // Slice
 const arr2 = arr.slice(0, 3);
 console.log(arr2);
+
+// Concat
+const arr3 = arr.concat(arr2);
+console.log(arr3);
+
+
+// Substituir elementos
+// Splice
+arr.splice(1, 1, "Samwise");
+console.log(arr);
+
+
+// Iterar elementos
+// For
+for (let i = 0; i < arr.length; i++) {
+  const element = arr[i];
+  console.log(element + " se encontrava na posição " + i);
+}
+
+
