@@ -13,6 +13,7 @@ let pacientes = [
   "Mariana",
   "Fernanda",
   "Pedro",
+  "Warley",
 ];
 
 // Função para mostrar a lista de pacientes
@@ -33,9 +34,8 @@ function adicionarPaciente() {
   } else {
     pacientes.push(pacienteAdicionar);
   }
-  alert("Paciente adicionado com sucesso!");
   let indice = pacientes.indexOf(pacienteAdicionar);
-  alert("Paciente adicionado na posição " + (indice + 1));
+  alert(`Paciente ${pacienteAdicionar} adicionado com sucesso na posição ${indice + 1}!`);
 }
 
 // Função para remover um paciente
@@ -44,9 +44,9 @@ function removerPaciente() {
   let indice = pacientes.indexOf(pacienteRemover);
   if (indice >= 0) {
     pacientes.splice(indice, 1);
-    alert("Paciente removido com sucesso!");
+    alert(`Paciente ${pacienteRemover} removido com sucesso!`);
   } else {
-    alert("Paciente não encontrado!");
+    alert("Paciente não encontrado, digite outro nome!");
   }
 }
 
@@ -57,13 +57,13 @@ function consultarPaciente() {
   if (pacientes.includes(pacienteConsultar)) {
     alert("Paciente encontrado na posição " + (indice + 1));
   } else {
-    alert("Paciente não encontrado!");
+    alert("Paciente não encontrado, digite outro nome!");
   }
 }
 
 // Função sair e fecha o sistema
 function sair() {
-  alert("Sistema fechado!");
+  alert("Fechando o sistema");
 }
 
 // Menu interativo
@@ -89,7 +89,7 @@ while (opcao != 5) {
       sair();
       break;
     default:
-      alert("Opção inválida!");
+      alert("Opção inválida, digite outra opção!");
   }
 }
 
