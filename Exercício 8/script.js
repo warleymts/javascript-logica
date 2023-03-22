@@ -2,16 +2,16 @@
 // Para cadastrar um imóvel, o programa deve pedir o endereço, o valor do aluguel e o número de quartos.
 
 
-// Variáveis
-var imoveis = [];
-var opcao = 0;
+// constiáveis
+const imoveis = [];
+const opcao = 0;
 
 // Funções
 function cadastrarImovel() {
-    var endereco = prompt("Digite o endereço do imóvel");
-    var valorAluguel = prompt("Digite o valor do aluguel");
-    var numeroQuartos = prompt("Digite o número de quartos");
-    var imovel = {
+    const endereco = prompt("Digite o endereço do imóvel");
+    const valorAluguel = prompt("Digite o valor do aluguel");
+    const numeroQuartos = prompt("Digite o número de quartos");
+    const imovel = {
         endereco: endereco,
         valorAluguel: valorAluguel,
         numeroQuartos: numeroQuartos
@@ -20,8 +20,8 @@ function cadastrarImovel() {
 }
 
 function consultarImovel() {
-    var endereco = prompt("Digite o endereço do imóvel");
-    var imovel = imoveis.find(function(imovel) {
+    const endereco = prompt("Digite o endereço do imóvel");
+    const imovel = imoveis.find(function(imovel) {
         return imovel.endereco == endereco;
     });
     if (imovel) {
@@ -32,7 +32,7 @@ function consultarImovel() {
 }
 
 function listarImoveis() {
-    var lista = "";
+    const lista = "";
     imoveis.forEach(function(imovel) {
         lista += "Endereço: " + imovel.endereco + "\nValor do aluguel: " + imovel.valorAluguel + "\nNúmero de quartos: " + imovel.numeroQuartos + "\n\n";
     });
