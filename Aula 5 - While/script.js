@@ -1,10 +1,19 @@
-let velocidade = 80
+a = 48
+b = 36
 
-while (velocidade > 0){
-    alert(`O carro está a ${velocidade} km/h`)
-    velocidade -= 20
-    alert(`Diminuindo 20 km/h.`)
+while (a != b){
+    if (a > b){
+        a = a - b
+    } else {
+        b -= a
+    }
+    
 }
 
-alert(`O carro parou.`);
+
+console.log(a)
+
+// Inserir valor de a e b
+// Path: Aula 5 - While\script.js
+
 
