@@ -2,7 +2,7 @@
 // Para cadastrar um imóvel, o programa deve pedir o endereço, o valor do aluguel e o número de quartos.
 
 
-// constiáveis
+// Constantes
 const imoveis = [];
 const opcao = 0;
 
