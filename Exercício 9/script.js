@@ -58,6 +58,7 @@ function areaTrapezio(baseMaior, baseMenor, altura) {
   alert(`A área do trapézio é: ${area}`);
 }
 
+
 // Condição com switch
 switch (opcao) {
   case 1:
